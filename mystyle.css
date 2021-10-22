@@ -1,0 +1,52 @@
+.jumbotron {
+  /* padding-top: ; */
+  background-color: #ffffff;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.hero-image {
+  background-image: url("img/13.png"); /* The image used */
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+@media (max-width: 575.98px) {
+  .hero-image {
+    margin-top: -50px;
+    background-image: url("img/12.png"); /* The image used */
+    height: 450px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 200px 300px; /* Resize the background image to cover the entire container */
+  }
+}
+
+.t-jumbo1 {
+  margin-top: 150px;
+  font-size: 80px;
+}
+
+.t-jumbo2 {
+  font-size: 80px;
+}
+
+@media (max-width: 575.98px) {
+  .t-jumbo1 {
+    color: #ffffff;
+    margin-top: 250px;
+    font-size: 18px;
+    animation: forwards;
+    text-align: center;
+  }
+
+  .t-jumbo2 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
