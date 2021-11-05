@@ -8,7 +8,7 @@ section {
 }
 
 .hero-image {
-  background-image: url("img/other/bagusweb.png"); /* The image used */
+  background-image: url("img/other/bgs.png"); /* The image used */
   height: 700px; /* You must set a specified height */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -18,7 +18,7 @@ section {
 @media (max-width: 575.98px) {
   .hero-image {
     margin-top: -50px;
-    background-image: url("img/other/bagushp.png"); /* The image used */
+    background-image: url("img/other/bgshp.png"); /* The image used */
     height: 450px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
