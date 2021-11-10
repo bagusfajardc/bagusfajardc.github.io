@@ -1,6 +1,5 @@
 .jumbotron {
-  /* padding-top: ; */
-  background-color: #ffffff;
+  height: 500px;
 }
 
 section {
@@ -9,10 +8,9 @@ section {
 
 .hero-image {
   background-image: url("img/other/bgs.png"); /* The image used */
-  height: 700px; /* You must set a specified height */
-  background-position: center; /* Center the image */
+  background-position: bottom; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position-x: center;
 }
 
 @media (max-width: 575.98px) {
@@ -26,13 +24,26 @@ section {
   }
 }
 
+/* t-jumbo */
 .t-jumbo1 {
-  margin-top: 150px;
-  font-size: 80px;
+  font-size: 100px;
+  /* color: #f26c4f; */
+  color: yellow;
+  /* font-family: "Quicksand"; */
+  font-family: "Bebas Neue";
+  font-weight: bolder;
+}
+.t-jumbo2 {
+  font-size: 50px;
+  color: white;
+  font-family: "Bebas Neue";
+  font-weight: bold;
 }
 
-.t-jumbo2 {
-  font-size: 80px;
+.t-jumbo3 {
+  font-size: 33px;
+  font-family: "Lato";
+  color: yellow;
 }
 
 @media (max-width: 575.98px) {
@@ -53,4 +64,88 @@ section {
 
 .jstf {
   text-align: justify;
+}
+
+/* d-text */
+.d-text1 {
+  font-family: "Quicksand";
+  color: yellow;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.d-text2 {
+  font-family: "Quicksand";
+  color: white;
+  font-size: medium;
+}
+
+/* link */
+.d-link {
+  color: yellow;
+}
+
+.d-link:hover {
+  color: rgb(189, 189, 0);
+  transition: 1s;
+}
+
+/* border */
+.eborder {
+  border-right: 4px solid #1a1a1a;
+  margin: auto;
+  padding: 5px;
+  filter: opacity(90%);
+  transition: 0.4s;
+}
+.eborder:hover {
+  filter: none;
+}
+
+/* box-shadow */
+.box-shadow1 {
+  /* transform: skewY(0deg) skewX(347deg) rotateX(31deg); */
+  box-shadow: 2px 2px 20px yellow;
+  filter: opacity(80%);
+  transition: 1s;
+}
+
+.box-shadow1:hover {
+  transform: none;
+  filter: brightness(100%);
+  box-shadow: -2px -2px 30px yellow;
+  /* box-shadow: 5px 5px 5px yellow; */
+  /* transform: scale(50%); */
+  transform: translateX(-40px) scale(1.1);
+  transition: 1s;
+}
+
+@media (max-width: 575.98px) {
+  .box-shadow1:hover {
+    transform: none;
+  }
+}
+
+.box-shadow2 {
+  border: 0px solid;
+  background-color: yellow;
+  box-shadow: 8px 10px 5px white;
+  transition: 0.6s;
+}
+
+.box-shadow2:hover {
+  margin-left: 10px;
+  box-shadow: -4px -6px 5px white;
+  /* box-shadow: 14px 16px 5px white; */
+  filter: none;
+}
+
+.d-box {
+  transition: 1s;
+}
+
+.d-box:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: -2px -2px 30px white;
 }
