@@ -31,8 +31,9 @@
 	============================================= -->
     <div id="wrapper" class="clearfix">
       <div id="home" class="page-section" style="position: absolute; top: 0; left: 0; width: 100%; height: 200px; z-index: -2"></div>
+
       <!-- Header  -->
-      <header id="header" class="transparent-header floating-header">
+      <header id="header" class="full-header">
         <div id="header-wrap">
           <div class="container clearfix">
             <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
@@ -48,6 +49,9 @@
             <!-- Primary Navigation -->
             <nav id="primary-menu">
               <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
                 <li>
                   <a href="#"><div>Biodata</div></a>
                   <ul>
@@ -72,9 +76,9 @@
                   <a href="#pengalaman"><div>Pengalaman</div></a>
                 </li>
 
-                <!-- <li>
-								  <a href="#kontak"><div>Kontak</div></a>
-								</li> -->
+                <li>
+                  <a href="#kontak"><div>Kontak</div></a>
+                </li>
               </ul>
             </nav>
             <!-- #primary-menu end -->
@@ -82,6 +86,7 @@
         </div>
       </header>
       <!-- end header -->
+
       <!-- background image -->
       <section id="slider" class="slider-element slider-parallax full-screen with-header swiper_wrapper nobottommargin clearfix">
         <div class="slider-parallax-inner">
@@ -106,19 +111,21 @@
         <div class="content-wrap">
           <div class="container clearfix">
             <!-- profil -->
-            <div class="col_two_third nobottommargin">
+            <div id="profil" class="col_two_third notopmargin nobottommargin">
               <div style="position: relative" data-height-xl="535" data-height-lg="442" data-height-md="338" data-height-sm="316" data-height-xs="201">
                 <img data-animate="fadeInLeft" src="image/landing/bgsf.png" style="position: absolute; top: 0; left: 0" />
                 <img data-animate="fadeInRight" data-delay="300" src="image/landing/arrow.png" style="position: absolute; top: 0; left: 0" />
               </div>
             </div>
 
-            <div id="profil" class="col_one_third nobottommargin col_last">
+            <div class="col_one_third nobottommargin col_last">
               <p>
-                Assalamualaikum halo, perkenalkan saya Bagus. Saya berasal dari Kota Depok. Saya lulusan Teknik Informatika dari Universitas Gunadarma. Mungkin dengan website portfolio ini kamu bisa
+                Assalamualaikum halo, perkenalkan saya Bagus. Saya berasal dari Kota Depok. Saya lulusan Teknik Informatika dari Universitas Gunadarma. Mungkin dengan website portofolio ini kamu bisa
                 mengenal lebih dalam mengenai saya dan bisa menjalin tali silaturahmi.
               </p>
-              <div class="divider divider-short"><i class="icon-circle"></i></div>
+
+              <div class="divider divider-short divider-center"><i class="icon-line-paper-clip"></i></div>
+
               <h3>Profil.</h3>
               <ul class="iconlist iconlist-large iconlist-color">
                 <li><i class="icon-ok-sign"></i> Nama : Bagus Fajar Dwicahyo</li>
@@ -128,9 +135,10 @@
             </div>
 
             <div class="clear"></div>
-            <div id="pendidikan" class="divider"><i class="icon-circle"></i></div>
 
-            <h3 id="pendidikan">Pendidikan.</h3>
+            <div id="pendidikan" class="fancy-title title-bottom-border">
+              <h3>Pendidikan</h3>
+            </div>
             <div class="row">
               <div class="col-lg-3 col-md-6 bottommargin">
                 <div class="team">
@@ -176,7 +184,7 @@
               <div class="col-lg-3 col-md-6 bottommargin">
                 <div class="team">
                   <div class="team-image">
-                    <img src="image/pendidikan/kuliah.png" />
+                    <img src="image/pendidikan/sd.png" />
                   </div>
                   <div class="team-desc team-desc-bg">
                     <div class="team-title">
@@ -192,14 +200,16 @@
             <div class="clear"></div>
 
             <!-- portofolio -->
-            <div id="portofolio" class="col_one_third mt-5 nobottommargin">
-              <h3>Portofolio.</h3>
+            <div id="portofolio" class="col_one_third nobottommargin">
+              <div class="fancy-title title-bottom-border">
+                <h3>Portofolio</h3>
+              </div>
               <p style="text-align: justify">
-                Ini pengalaman saya dalam pembuatan company profile untuk PT. ALTRAK 1978. Kontribusi saya dalam pembuatan website ini adalah sebagai Fullstack Developer. Selain itu saya juga membuat
-                form untuk admin dalam mengelola konten yang akan ditampilkan pada website tersebut. Seperti konten product, berita, informasi lowongan kerja dan lainnya. Selain itu saya membuat
-                database sederhana untuk website tersebut. Berikut adalah beberapa halaman dari <a href="">PT. ALTRAK 1978.</a>
+                Ini pengalaman saya dalam pembuatan company profile untuk PT. ALTRAK 1978. Tanggungjawab saya dalam pembuatan website ini sebagai Fullstack Web Developer. Selain itu saya juga membuat
+                form khusus untuk admin dalam mengelola konten yang akan ditampilkan pada website tersebut seperti konten product, berita, informasi lowongan kerja dan lainnya. Terakhir saya membuat
+                database sederhana untuk menyimpan data pada website tersebut. Berikut adalah beberapa halaman dari <a href="https://www.altrak1978.co.id/">PT. ALTRAK 1978.</a>
               </p>
-              <div class="divider divider-short"><i class="icon-circle"></i></div>
+              <div class="divider divider-rounded divider-right"><i class="icon-atom"></i></div>
             </div>
 
             <div class="col_two_third nobottommargin col_last">
@@ -318,7 +328,13 @@
             <div class="clear"></div>
 
             <!-- gallery -->
-            <h3 id="galeri" class="mt-5">Galeri</h3>
+            <div id="galeri" class="fancy-title title-bottom-border mt-5">
+              <h3>
+                <div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+                  Lihat galeri saya di <span class="t-rotate" style="color: #ed1d51">YouTube|Instagram|GitHub</span>
+                </div>
+              </h3>
+            </div>
             <div class="row grid-container" data-layout="masonry" data-animate="fadeInDown" style="overflow: visible">
               <div class="col-lg-4 mb-4">
                 <div class="flip-card text-center">
@@ -367,8 +383,11 @@
             <div class="clear"></div>
 
             <!-- sertifikat -->
-            <div id="sertifikat" class="col_half mt-5">
-              <h3>Sertifikat</h3>
+            <div id="sertifikat" class="col_half">
+              <div class="title-block">
+                <h3>Sertifikat</h3>
+                <span>Beberapa sertifikasi yang didapatkan : </span>
+              </div>
               <div class="toggle toggle-bg">
                 <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i>Database Administration Fundamentals</div>
                 <div class="togglec">
@@ -448,12 +467,16 @@
                   </ul>
                 </div>
               </div>
+              <div class="divider divider-short divider-center"><i class="icon-line2-notebook"></i></div>
             </div>
             <!-- end sertifikat -->
 
             <!-- pengalaman -->
-            <div id="pengalaman" class="col_half mt-5 col_last">
-              <h3>Pengalaman Kerja</h3>
+            <div id="pengalaman" class="col_half col_last">
+              <div class="title-block">
+                <h3>Pengalaman Kerja</h3>
+                <span>Berikut adalah pengalaman kerja saya </span>
+              </div>
               <div class="toggle toggle-border">
                 <div class="togglet"><i class="toggle-closed icon-ok-circle"></i><i class="toggle-open icon-remove-circle"></i> Jr. Programmer</div>
                 <div class="togglec">
@@ -469,49 +492,153 @@
                   </ul>
                 </div>
               </div>
+              <div class="divider divider-short divider-center"><i class="icon-suitcase1"></i></div>
             </div>
             <!-- end pengalaman -->
 
-            <div class="line"></div>
+            <div class="clear"></div>
+
+            <!-- Social Media  -->
+            <div id="kontak" class="col_half">
+              <h3>
+                <div class="text-rotater" data-separator="|" data-rotate="bounceIn" data-speed="2500">
+                  Temukan jejaring sosial saya di <span class="t-rotate" style="color: #ed1d51">Facebook|Linkedin|Instagram|Telegram|dan Whatsapp </span>
+                </div>
+              </h3>
+              <div class="row clear-bottommargin">
+                <div class="col-lg-4 col-md-6 bottommargin clearfix">
+                  <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
+                    <div class="fbox-icon">
+                      <a href="https://www.facebook.com/bagusfajardc/" target="_blank"><i class="icon-facebook i-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 bottommargin clearfix">
+                  <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
+                    <div class="fbox-icon">
+                      <a href="https://www.linkedin.com/in/bagusfajardc/" target="_blank"><i class="icon-linkedin i-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 bottommargin clearfix">
+                  <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
+                    <div class="fbox-icon">
+                      <a href="https://www.instagram.com/bagusfajardc/" target="_blank"><i class="icon-instagram i-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 bottommargin clearfix">
+                  <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
+                    <div class="fbox-icon">
+                      <a href="https://t.me/bagusfajardc" target="_blank"><i class="icon-telegram i-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 bottommargin clearfix">
+                  <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
+                    <div class="fbox-icon">
+                      <a href="https://api.whatsapp.com/send?phone=6282211609679" target="_blank"><i class="icon-whatsapp i-alt"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="divider divider-rounded divider-center"><i class="icon-chat"></i></div>
+            </div>
+            <!-- end Social Media -->
+
+            <!-- end Contact Form -->
+            <!-- <div class="col_half col_last">
+              <div class="fancy-title title-dotted-border">
+                <h3>Kirimkan saya Email</h3>
+              </div>
+
+              <div class="form-widget">
+                <div class="form-result"></div>
+
+                <form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
+                  <div class="form-process"></div>
+
+                  <div class="col_half">
+                    <label for="template-contactform-name">Name <small>*</small></label>
+                    <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+                  </div>
+
+                  <div class="col_half col_last">
+                    <label for="template-contactform-email">Email <small>*</small></label>
+                    <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+                  </div>
+
+                  <div class="clear"></div>
+
+                  <div class="col_two_third">
+                    <label for="template-contactform-subject">Subject <small>*</small></label>
+                    <input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+                  </div>
+
+                  <div class="clear"></div>
+
+                  <div class="col_full">
+                    <label for="template-contactform-message">Message <small>*</small></label>
+                    <textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+                  </div>
+
+                  <div class="col_full hidden">
+                    <input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+                  </div>
+
+                  <div class="col_full">
+                    <button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin bg-info">Submit Comment</button>
+                  </div>
+
+                  <input type="hidden" name="prefix" value="template-contactform-" />
+                </form>
+              </div>
+            </div> -->
+            <!-- end Contact Form -->
+
             <div class="clear"></div>
           </div>
         </div>
       </section>
       <!-- #content end -->
 
-      <!-- Footer
-		============================================= -->
+      <!-- Footer  -->
       <footer id="footer" class="dark">
         <!-- Copyrights
 			============================================= -->
         <div id="copyrights">
           <div class="container clearfix">
-            <div class="col_half">
-              <img src="image/dc.png" style="height: 80px; width: 100px" class="footer-logo" />
-              <div class="mb-3" style="color: white">Copyrights &copy; 2021 All Rights Reserved by <a href="https://www.instagram.com/bagusfajardc/" target="_blank"> Bagus Fajar Dwicahyo.</a></div>
-            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <img src="image/dc.png" style="height: 80px; width: 100px" class="footer-logo" />
+              </div>
 
-            <div class="col_half col_last">
-              <div class="fright clearfix">
-                <a href="https://www.facebook.com/bagusfajardc/" class="social-icon si-colored si-facebook">
-                  <i class="icon-facebook"></i>
-                  <i class="icon-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/bagusfajardc/" class="social-icon si-colored si-linkedin">
-                  <i class="icon-linkedin"></i>
-                  <i class="icon-linkedin"></i>
-                </a>
-                <a href="https://www.instagram.com/bagusfajardc/" class="social-icon si-colored si-instagram">
-                  <i class="icon-instagram"></i>
-                  <i class="icon-instagram"></i>
-                </a>
-                <a href="https://t.me/bagusfajardc" class="social-icon si-colored si-telegram">
-                  <i class="icon-telegram"></i>
-                  <i class="icon-telegram"></i>
-                </a>
+              <div class="col-lg-6">
+                <div class="mb-2" style="color: white">Copyrights &copy; 2021 All Rights Reserved by <a href="https://www.instagram.com/bagusfajardc/" target="_blank"> Bagus Fajar Dwicahyo.</a></div>
+                <div class="mb-2" style="color: wheat">*untuk pengalaman tampilan lebih baik dapat dilihat pada versi desktop &nbsp; <i class="icon-line2-screen-desktop"></i></div>
+              </div>
+
+              <div class="col-lg-3">
+                <div class="fright clearfix">
+                  <a href="https://www.facebook.com/bagusfajardc/" class="social-icon si-colored si-facebook">
+                    <i class="icon-facebook"></i>
+                    <i class="icon-facebook"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/bagusfajardc/" class="social-icon si-colored si-linkedin">
+                    <i class="icon-linkedin"></i>
+                    <i class="icon-linkedin"></i>
+                  </a>
+                  <a href="https://www.instagram.com/bagusfajardc/" class="social-icon si-colored si-instagram">
+                    <i class="icon-instagram"></i>
+                    <i class="icon-instagram"></i>
+                  </a>
+                  <a href="https://t.me/bagusfajardc" class="social-icon si-colored si-telegram">
+                    <i class="icon-telegram"></i>
+                    <i class="icon-telegram"></i>
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="clear"></div>
           </div>
         </div>
         <!-- #copyrights end -->
@@ -535,10 +662,10 @@
 
     <script src="js/jquery.gmap.js"></script>
 
-    <script>
+    <!-- <script>
       $(function () {
         $("#side-navigation").tabs({ show: { effect: "fade", duration: 400 } });
       });
-    </script>
+    </script> -->
   </body>
 </html>
