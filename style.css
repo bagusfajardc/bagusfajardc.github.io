@@ -1615,7 +1615,6 @@ body.no-superfish #primary-menu li:hover > .mega-menu-content {
   background-color: #f9f9f9;
   padding-left: 18px;
   color: #ed1d51;
-  ;
 }
 
 #primary-menu ul ul > li.sub-menu > a,
@@ -13143,7 +13142,7 @@ input[type="checkbox"]:not(:checked) + label.error {
 
 .title-block {
   padding: 2px 0 3px 20px;
-  border-left: 7px solid #1abc9c;
+  border-left: 7px solid #ed1d51;
   margin-bottom: 30px;
 }
 
