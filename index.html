@@ -509,35 +509,35 @@
                 <div class="col-lg-4 col-md-6 bottommargin clearfix">
                   <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
                     <div class="fbox-icon">
-                      <a href="https://www.facebook.com/bagusfajardc/" target="_blank"><i class="icon-facebook i-alt"></i></a>
+                      <a href="https://www.facebook.com/bagusfajardc/" target="_blank"><i class="icon-facebook i-alt si-colored si-facebook"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 bottommargin clearfix">
                   <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
                     <div class="fbox-icon">
-                      <a href="https://www.linkedin.com/in/bagusfajardc/" target="_blank"><i class="icon-linkedin i-alt"></i></a>
+                      <a href="https://www.linkedin.com/in/bagusfajardc/" target="_blank"><i class="icon-linkedin i-alt si-colored si-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 bottommargin clearfix">
                   <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
                     <div class="fbox-icon">
-                      <a href="https://www.instagram.com/bagusfajardc/" target="_blank"><i class="icon-instagram i-alt"></i></a>
+                      <a href="https://www.instagram.com/bagusfajardc/" target="_blank"><i class="icon-instagram i-alt si-colored si-instagram"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 bottommargin clearfix">
                   <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
                     <div class="fbox-icon">
-                      <a href="https://t.me/bagusfajardc" target="_blank"><i class="icon-telegram i-alt"></i></a>
+                      <a href="https://t.me/bagusfajardc" target="_blank"><i class="icon-telegram i-alt si-colored si-intensedebate"></i></a>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 bottommargin clearfix">
                   <div class="feature-box fbox-rounded fbox-center fbox-effect fbox-dark">
                     <div class="fbox-icon">
-                      <a href="https://api.whatsapp.com/send?phone=6282211609679" target="_blank"><i class="icon-whatsapp i-alt"></i></a>
+                      <a href="https://api.whatsapp.com/send?phone=6282211609679" target="_blank"><i class="icon-whatsapp i-alt si-colored si-evernote"></i></a>
                     </div>
                   </div>
                 </div>
@@ -546,8 +546,8 @@
             </div>
             <!-- end Social Media -->
 
-            <!-- end Contact Form -->
-            <!-- <div class="col_half col_last">
+            <!-- Contact Form -->
+            <div class="col_half col_last">
               <div class="fancy-title title-dotted-border">
                 <h3>Kirimkan saya Email</h3>
               </div>
@@ -555,31 +555,34 @@
               <div class="form-widget">
                 <div class="form-result"></div>
 
-                <form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/form.php" method="post">
-                  <div class="form-process"></div>
+                <div class="alert my-alert alert-success alert-dismissible fade show d-none" role="alert">
+                  <strong>Terimakasih! </strong> Pesan Anda sudah kami terima.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
 
+                <form class="nobottommargin" id="portfoliome-contact-form" name="portfoliome-contact-form">
                   <div class="col_half">
-                    <label for="template-contactform-name">Name <small>*</small></label>
-                    <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+                    <label for="nama">Name <small>*</small></label>
+                    <input type="text" id="nama" name="nama" class="sm-form-control required" />
                   </div>
 
                   <div class="col_half col_last">
-                    <label for="template-contactform-email">Email <small>*</small></label>
-                    <input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+                    <label for="email">Email <small>*</small></label>
+                    <input type="email" id="email" name="email" class="required email sm-form-control" />
                   </div>
 
                   <div class="clear"></div>
 
                   <div class="col_two_third">
-                    <label for="template-contactform-subject">Subject <small>*</small></label>
-                    <input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+                    <label for="subjek">Subject <small>*</small></label>
+                    <input type="text" id="subjek" name="subjek" class="required sm-form-control" />
                   </div>
 
                   <div class="clear"></div>
 
                   <div class="col_full">
-                    <label for="template-contactform-message">Message <small>*</small></label>
-                    <textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+                    <label for="pesan">Message <small>*</small></label>
+                    <textarea class="required sm-form-control" id="pesan" name="pesan" rows="6" cols="30"></textarea>
                   </div>
 
                   <div class="col_full hidden">
@@ -587,13 +590,18 @@
                   </div>
 
                   <div class="col_full">
-                    <button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin bg-info">Submit Comment</button>
+                    <button name="submit" type="submit" id="submit-button" tabindex="5" value="Submit" class="button button-3d nomargin bg-info btn-kirim">Submit Comment</button>
                   </div>
+
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
 
                   <input type="hidden" name="prefix" value="template-contactform-" />
                 </form>
               </div>
-            </div> -->
+            </div>
             <!-- end Contact Form -->
 
             <div class="clear"></div>
@@ -620,21 +628,25 @@
 
               <div class="col-lg-3">
                 <div class="fright clearfix">
-                  <a href="https://www.facebook.com/bagusfajardc/" class="social-icon si-colored si-facebook">
+                  <a href="https://www.facebook.com/bagusfajardc/" target="_blank" class="social-icon si-colored si-facebook">
                     <i class="icon-facebook"></i>
                     <i class="icon-facebook"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/bagusfajardc/" class="social-icon si-colored si-linkedin">
+                  <a href="https://www.linkedin.com/in/bagusfajardc/" target="_blank" class="social-icon si-colored si-linkedin">
                     <i class="icon-linkedin"></i>
                     <i class="icon-linkedin"></i>
                   </a>
-                  <a href="https://www.instagram.com/bagusfajardc/" class="social-icon si-colored si-instagram">
+                  <a href="https://www.instagram.com/bagusfajardc/" target="_blank" class="social-icon si-colored si-instagram">
                     <i class="icon-instagram"></i>
                     <i class="icon-instagram"></i>
                   </a>
-                  <a href="https://t.me/bagusfajardc" class="social-icon si-colored si-telegram">
+                  <a href="https://t.me/bagusfajardc" target="_blank" class="social-icon si-colored si-intensedebate">
                     <i class="icon-telegram"></i>
                     <i class="icon-telegram"></i>
+                  </a>
+                  <a href="https://api.whatsapp.com/send?phone=6282211609679" target="_blank" class="social-icon si-colored si-evernote">
+                    <i class="icon-whatsapp"></i>
+                    <i class="icon-whatsapp"></i>
                   </a>
                 </div>
               </div>
@@ -667,5 +679,35 @@
         $("#side-navigation").tabs({ show: { effect: "fade", duration: 400 } });
       });
     </script> -->
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycby0bD_JsjfnoXPdmh3IojLMaE6Aodv7Nc6Rf6TU8pPTmbp8EwoRulwjk_2TFiY6R2FO/exec";
+      const form = document.forms["portfoliome-contact-form"];
+
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        //ketika tombol submit diklick
+        //tampilkan tombol laoding, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            //tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan alert
+            myAlert.classList.toggle("d-none");
+            //reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
